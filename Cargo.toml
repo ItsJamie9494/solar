@@ -1,0 +1,25 @@
+[package]
+name = "solar"
+version = "1.0.0"
+authors = [ "Jamie Murphy <hello@itsjamie.dev" ]
+description = "A calendar app"
+edition = "2021"
+
+[dependencies]
+log = "0.4"
+pretty_env_logger = "0.4"
+gettext-rs = { version = "0.7", features = ["gettext-system"] }
+
+[build-dependencies]
+owo-colors = "3.4.0"
+gio = "0.15"
+
+[dependencies.gtk]
+package = "gtk4"
+git = "https://github.com/gtk-rs/gtk4-rs"
+version = "0.5"
+
+[dependencies.he]
+package = "libhelium"
+git = "https://github.com/ItsJamie9494/libhelium-rs"
+version = "0.1.0"
